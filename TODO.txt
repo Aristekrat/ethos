@@ -1,0 +1,31 @@
+GIT / SERVER
+
+Set up Git to Auto-push to the server
+Set up Git for Ethos
+Set up the proper Ethos url
+Move to the new url
+Set up permanenet redirects from the old urls
+Rewrite the htaccess to automatically handle all requests and send them to the appropriate php page. 
+Get a new Google Analytics code snippet for the proper url. 
+
+JAVASCRIPT
+
+Refactor the main JS (utility)
+Rewrite the JS for the contact function.
+
+DESIGN
+
+Check the site for responsiveness after everything else has been done
+Clean the CSS file, eliminate obvious redundancies and fix&standardize the tabs / spacing. 
+
+PAGES
+
+Skipped the Contact page. 
+
+BUG HUNTING - to be done after all other edits
+
+Check all links for functionality
+Use all interactive elements
+Use the contact form
+Read the site text
+Polish the IE design files

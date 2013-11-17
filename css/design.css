@@ -1,0 +1,1424 @@
+/**************************************************************
+/* design.css
+/* BCase 08/29/12
+/*
+/*	Styles for ethos-web-solutions.com
+/*************************************************************/
+
+/*------------------------------------------------------------------------------*/
+/* SECTION:: Global Styling & Resets */
+
+html, body { 
+padding: 						0; 
+margin: 						0;
+border:							0; 
+}
+
+@font-face {
+    font-family: 'ColaborateLightRegular';
+    src: url('fonts/ColabLig-webfont.eot');
+    src: url('fonts/ColabLig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ColabLig-webfont.woff') format('woff'),
+         url('fonts/ColabLig-webfont.ttf') format('truetype'),
+         url('fonts/ColabLig-webfont.svg#ColaborateLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, head {
+	font-size:					1em; 
+	font-family:				ColaborateLightRegular; /* Arial, sans-serif; */ 
+	color:						#555555;
+	background: 				#fff;
+}
+
+a img { 
+	border: 					0; 
+}
+
+h1 {
+	font-family: 				Arial, sans-serif;
+	margin: 					.4em 0;
+	color: 						#444;
+	padding: 					.4em;
+} 
+
+hr { border: 1px solid #cfcecd; border-left: none; border-right: none; height: 3px; }
+
+a { text-decoration: none; color: #1897c7;}
+a:hover { color: #115eac; }
+
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+::-webkit-input-placeholder { /*This repetition is apparently necessary */ 
+   font-family: 'ColaborateLightRegular';
+   font-size: 1.1em;
+   color: #cacdcd;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-family: 'ColaborateLightRegular'; 
+   font-size: 1.1em;
+   color: #cacdcd;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family: 'ColaborateLightRegular';  
+   font-size: 1.1em;
+   color: #cacdcd;
+}
+
+:-ms-input-placeholder {  
+   font-family: 'ColaborateLightRegular';  
+   font-size: 1.1em;
+   color: #cacdcd;
+}
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Container and Query Definitions */
+
+/* MAIN CONTAINER DEFINITIONS */
+#container {
+		background:						#fff; 
+		min-height:						100%;
+		height:							100%; 
+		margin:							0 auto 0 auto;
+		width:							1070px;
+}	
+.topLI {
+		width:							10.5%;
+		margin-left:					5%;
+		position:						absolute;
+		display:						inline-block;
+		height:							45px;
+}	#miniLI {
+		left:							15%;
+		width:							5.85%;
+}	#LIChoose {
+		left:							21%;
+}	#LIService {
+		left:							31.7%;
+}	#LIPricing {
+		left:							42.37%;
+}	#LIBlog {
+		left:							53%;
+}	#LIContact {
+		left:							63.7%;
+}	.topLI p {
+		margin-top:						5%; 
+}
+.footer {
+		width:							100%; 
+} 	.column {
+		width:							17%;
+}	.mainH1 {
+		width:							60%;
+		margin-left:					21.9%;
+}	#mainH1Sell {
+		margin-top:						3%;
+}	.infoPage {
+		width:							65%;
+}		.mainNavBox {
+		width:							22%;
+}		.mainNav h2 {
+		margin: 						5% auto -2.5% auto; 
+}		.bottomInfo {
+		float:							left;
+		position:						relative;
+}	.contactFormDiv {
+		margin-right:					2.2em; 
+		width: 							41%; 
+} 	#inputField {
+		width:							49.3%;
+}	#privacyPolicy {
+		left:							6%;
+}	#mapH3 {
+		margin-left:					10%;
+}	#contactH3 {
+		margin-left:					45.5%;
+}	.button.contact { /* This code block will almost certainly require revision after the redesign */ 
+		font-size:						1.5em;
+		padding:						2.8%; 
+		width:							60%;
+		float:							left;
+		position:						relative;
+		left:							2.5%;
+}		.button.contact.professionalCallButton {
+		margin:							12% 0 0 -2%; 	
+		width:							38%;
+	/*	left:							30%; */
+}		.button.contact.affordableCallButton {
+		margin:							2% 0 0 27%;
+		width:							38%;
+}		.button.contact.buildWebsiteCallButton {
+		margin:							4% 0 0 0%;
+		width:							38%;
+		left:							32%;
+}
+	.pageH1 {
+		width:							80%;
+}		#ethosApproach {
+		margin-top:						-5.50%;
+}	.pageH2 {
+		margin-left:					2%;
+}	#servicesH1 {
+		margin:							3% 0 3% 0;
+}	.bottomNavH4 {
+		position:						absolute;
+		top:							-9999px;
+		left:							-9999px;
+}	.textColumns {
+		margin:							0% 1% 0% 2%;
+		width:							21.5%;
+		font-size:						1.2em;
+}	#rightPage{ 
+		margin-left:					36.3%;
+} 	.topContactBlock {
+		float:							left;
+		width:							100%;
+		position:						relative;
+		margin:							-15% 0 6% 0;
+}		#leftCell, #rightCell {
+			float:							left;
+			position:						relative;
+			width:							44%;
+}		#leftCell {
+			left:							0%;
+}		#rightCell {
+			left:							5%;
+}		#leftCell input {
+			margin-left:					-1%;
+}		#rightCell input {
+			margin-left:					-3%;
+}	.bottomExplain {
+		list-style-type:				none;
+}	#pricesDisclaimer {
+		width:							65%;
+}	.column li a {
+		margin:							3% 0;
+		display:						block; 
+		font-size:						.9em;
+}	#mainContactForm {
+		width:							80%;
+		margin-top:						10%;
+		float:							left;
+}	
+
+#banner-fade {
+	margin: 5.5% 0 0 0; 
+}	.sliderImageContainer {
+	background:	transparent url(../images/homepage/lawfirm-web-design-specialists.jpg) 50% no-repeat;
+	background-size: 310%;
+	width: 50% !important;
+}	#sliderPanelOne {
+	background-position: 0% 50%;
+}	#sliderPanelTwo {
+
+}	#sliderPanelThree {
+	background-position: 98.7% 50%; 
+}	
+.sliderTextContainer {
+	width: 50%;
+}	.sliderTextContainer span {
+	margin: 26% 2% 2% 2%;
+}
+
+#qualityPage {
+	width: 1050px;	
+}	#qualityPage section {
+	width:	30%; 
+}	#qualityRightText {
+	margin-left:	40%; 
+}	#qualityPage h1 {
+	margin: 2% 0 0 0%;
+	left: 25.5%; 
+	white-space: pre;
+} 	
+
+.clockWrapper {
+      	top: 4em; 
+      	left: 40.5%;  
+}	#clock {
+		top: 1px; 
+		left: 0.2em; 
+}	#seconds {
+		left: 10.1em;
+		top: 6.2em; 
+}	#minutes {
+		left: 9.8em;
+		top: 6.2em;
+}	#hours {
+		left: 9.8em;
+		top: 8.2em;
+}	.clockWrapper figcaption {
+	margin: 32.4em 0 0 0;
+	display: inline-block;
+	font-size: .8em;
+	color: #888; 
+	line-height: 140%;
+	text-align: center;
+}
+
+.affordableNotice {
+	top:						26em;
+	left:						39%;
+}	#secondAffordableNotice {
+	left:						55%;
+}
+
+@media screen and (max-width: 1650px) and (min-width: 1081px) { /* Not an all purpose media query. Just a custom fix for the top nav. */ 
+.topLI {
+		width:							15%;
+		margin-left:					8%; 
+}	#miniLI {
+		left:							0%;
+		width:							8%;
+}	#LIChoose {
+		left:							8.25%;
+}	#LIService {
+		left:							23.5%;
+}	#LIPricing {
+		left:							38.77%;
+}	#LIBlog {
+		left:							54%;
+}	#LIContact {
+		left:							69.25%;
+}	.clockWrapper {
+      	left: 38.5%; 
+}	
+}	@media screen and (max-width: 1350px) and (min-width: 1081px) {
+	#qualityPage {
+		margin-left: 1%;		
+}	.clockWrapper {
+      	left: 36%; 
+}	
+}
+
+/* ELEMENT DEFINITIONS - TABLET */
+
+@media screen and (max-width: 1080px) and (min-width: 650px){
+	#container {
+		width:							100%;
+}	#ourPrices, ul.bjqs-controls {
+		display:						none;
+}	#inputField {
+		width:							100%;
+}	.column {
+		width:							24%;
+}	.topUL {
+		width:							100%;	
+}	.topLI {
+		width:							17%;
+		margin-left:					4.1%; 
+}	.topLI p {
+		margin-top:						7.5%; 
+}	#miniLI {
+		left:							-2%;
+		width:							9%;
+}	#LIChoose {
+		left:							7.45%;
+}	#LIService {
+		left:							24.87%;
+}	#LIPricing {
+		left:							42.29%;
+}	#LIBlog {
+		left:							59.65%;
+}	#LIContact {
+		left:							77%;
+}	.mainNavBox {
+		left:							-2%;
+}	.button.contact {
+		width:							47%;
+}	#privacyPolicy {
+		left:							0%;
+}	#leftCell, #rightCell {
+			width:							100%;
+}		#leftCell {
+			margin-left:					1%;
+}		#rightCell, #rightCell h4 {
+			margin-left:					-2%;
+}		#leftCell input, #rightCell input {
+			width:							90%;
+}	#pricesDisclaimer {
+		width:							65%;
+}	.column li a {
+		margin-bottom:					3.5%;
+}
+
+#banner-fade {
+	margin: 5.5% 0 0 0; 
+}	.sliderImageContainer {
+	background-size: 340%;
+}	.sliderTextContainer span {
+	margin: 18% 2% 2% 2%;
+}	#sliderPanelOne {
+	background-position: 0% 75%;
+}	#sliderPanelTwo {
+	background-positioN: 47.3% 75%;
+}	#sliderPanelThree {
+	background-position: 95% 75%; 
+}
+#mainIconBuild {
+	margin-left:			2%;
+}
+
+#qualityPage {
+	width: 100%;	
+}	#qualityPage h1 {
+	left: 21.5%;
+}	
+.button.contact.professionalCallButton {
+		margin:							4% 0 0 0; 
+}	
+.clockWrapper {
+      	left: 31.5%; 
+}	
+
+.affordableNotice {
+	top:						30em;
+	left:						39%;
+}	#secondAffordableNotice {
+	left:						50%;
+}
+
+
+}	@media screen and (max-width: 810px) and (min-width: 650px){
+#headerContain3, #secondHeader {
+		margin-left:					-7%;
+}	
+#qualityPage h1 {
+		left: 16.5%;
+}	
+.clockWrapper {
+    	left: 29%; 
+}	
+.affordableNotice {
+	top:						25em;
+}	.sliderImageContainer {
+	background:	transparent url(../images/homepage/lawfirm-web-design-specialists-smaller.jpg) 50% no-repeat;
+	background-size: 300%;
+}	#sliderPanelOne {
+	background-position: 0% 75%;
+}	#sliderPanelTwo {
+	background-positioN: 50% 75%;
+}	#sliderPanelThree {
+	background-position: 100% 75%; 
+} 
+}
+
+/* ELEMENT DEFINITIONS - SMALL TABLET & MOBILE PHONE */
+
+@media screen and (max-width: 649px) and (min-width: 180px){
+	#container {
+		width:							98%;
+		min-width:						200px;
+}	#ourPrices, ul.bjqs-controls {
+			display:					none;
+}	
+
+.topLI {
+		width:							32%;
+		margin-left:					4.1%; 
+		margin-top:						.8%;
+}	#miniLI {
+		left:							-3%;
+		width:							32%;
+}	#LIChoose {
+		left:							29.45%;
+}	#LIService {
+		left:							61.95%;
+}	#LIPricing {
+		left:							-3%;
+		top:							47px;
+}	#LIBlog {
+		left:							29.45%;
+		top:							47px;
+}	#LIContact {
+		left:							61.95%;
+		top:							47px;
+}	.topLI p {
+		margin-top:						5.5%; 
+}	#mainH1Sell {
+		width:							100%;
+		font-size:						2em;
+		margin-left:					-1%;
+		margin-top:						11%;	
+}	.mainLogo {
+		margin-left:					-26%;
+		max-width:						85%;
+}	#mainSell {
+		width:							75%;
+		margin-left:					8%;
+}	.mainNav {
+		width:							110%;
+		margin-left:					-6.5%;
+}	.mainNavBox {
+		width:							45%;
+		margin:							2%;
+}	.bottomExplain {
+		list-style-type:				none;
+		margin-left:					-7%;
+		width:							150%;
+}	.footer {
+		width:							95.5%; 
+} 	.contactFormDiv { 
+		width: 							95%; 
+		margin-right:					5%;
+}	.column {
+		width:							48%;
+}	#privacyPolicy {
+		left:							0%;
+		width:							50%;
+}	#mapH3 {
+		margin-left:					0%;
+}	#contactH3 {
+		margin-left:					38.5%;
+}	.button.contact {
+		width:							80%;
+		padding:						5.1%; 
+		font-size:						1.4em;
+		left:							-2%;
+}	.infoPage {
+		width:							95%;
+}	.rightIcon, .leftIcon, .border {
+		display:						none;
+}	.pageH1 {
+		margin-top:						12%;
+}	.pageH2 {
+		margin-left:					-8%;
+		width:							100%;
+}	#servicesH1 {
+		margin:							20% 0 3% 0;
+}	.bottomNavH4 {
+		position:						absolute;
+		top:							-3em;
+		left:							0%;
+} 	.textColumns {
+		margin:							10% 1.8% 0% 2%;
+		width:							32%;
+}	#rightPage{ 
+		margin-left:					10%;
+}	#leftCell, #rightCell {
+			width:							100%;
+}		#leftCell {
+			margin-left:					1%;
+}		#rightCell, #rightCell h4 {
+			margin-left:					-2%;
+}		#leftCell input, #rightCell input {
+			width:							90%;
+}	#contactUsQuery {
+		margin-top:						5%;
+}
+	#pricesDisclaimer {
+		width:							95%;
+}	.column li a {
+		margin-bottom:					7.5%;
+}
+#banner-fade {
+	margin: 14.5% 0 0 0; 
+}	.sliderImageContainer {
+	background:	transparent url(../images/homepage/lawfirm-web-design-specialists-smaller.jpg) 50% no-repeat;
+	background-size: 310%;
+}	#sliderPanelOne {
+	background-position: 0% 75%;
+}	#sliderPanelTwo {
+	background-positioN: 50% 75%;
+}	#sliderPanelThree {
+	background-position: 100% 75%; 
+} 	.sliderTextContainer span {
+	margin: 2%;
+}	
+
+#mainIconBuild, #mainIconPerformance {
+	margin-left:			3.5%;
+}
+
+#qualityPage {
+	width: 100%;
+}	#qualityPage h1 {
+	white-space: normal;
+	margin: 2em 0 0 0;  
+	left: 8%; 
+}
+.clockWrapper {
+      	top: 10em;
+      	left: 35.5%;
+}	#clock {
+		top: 1px;
+		left: 0.2em;
+}	#seconds {
+		left: 5.1em;
+		top: 3.2em; 
+}	#minutes {
+		left: 5.1em;
+		top: 3.15em;
+}	#hours {
+		left: 5em;
+		top: 4.2em;
+}	
+.button.contact.professionalCallButton {
+		margin:							6% 0 0 -10%; 	
+		width:							60%;
+}	
+} @media screen and (max-width: 455px) and (min-width: 180px) {
+
+#banner-fade {
+	margin: 24% 0 0 0; 
+}	.sliderImageContainer {
+	background:	transparent url(../images/homepage/lawfirm-web-design-specialists-funsize.jpg) 50% no-repeat;
+	background-size: 310%;
+	width:	30% !important;
+}	#sliderPanelOne {
+	background-position: 1.5% 75%;
+}	#sliderPanelTwo {
+	background-positioN: 51% 75%;
+}	#sliderPanelThree {
+	background-position: 100% 75%; 
+} 	.sliderTextContainer {
+	width:	70%;
+}	.sliderTextContainer h1 {
+	font-size:	1em;
+	margin:		0 2% -8% 2%;
+}	.sliderTextContainer p {
+	font-size:	.9em;
+}
+.mainNav h2 {
+		margin: 						10% auto -2.5% auto; 
+}	
+.mainNav {
+		width:							110%;
+		margin-left:					-9%;
+}	
+.mainNavBox {
+		width:							45%;
+		margin:							2%;
+}
+	#mapH3 {
+		margin-left:					-9%;
+}	#contactH3 {
+		margin-left:					28.5%;
+}	.button.contact {
+		width:							100%;
+		margin-left:					-1.7em; 
+		font-size:						1.2em;
+}	#inputField {
+		width:							100%;
+}	.column li a {
+		margin-bottom:					10.5%;
+}	#qualityPage h1 {
+		white-space: normal;
+		margin: 2em 0 0 0;  
+		left: 3%; 
+}	.clockWrapper {
+      	top: 9.5em;
+      	left: 20.5%;
+}	#qualityPage section {
+		width:	49%;
+		margin: 55% 0 0 0; 
+}	#qualityPage section p {
+		margin: 		1%;
+}	#qualityRightText {
+		margin-left:	1%;
+		border-left: 	1px solid #999; 
+}	
+}
+
+/* END SECTION: Container and Query Definitions */
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Page Architecture  */
+
+.topUL {
+		list-style-type:				none;
+}	.topLI {
+		top:							0;
+		color:							#444;
+		text-align:						center;
+		-ms-box-shadow:     			.1em .1em .3em #888; 
+		-moz-box-shadow:    			.1em .1em .3em #888; 
+		-webkit-box-shadow: 			.1em .1em .3em #888;
+		box-shadow:		    			.1em .1em .3em #888;
+		border-left:					.09em solid #999;
+		border-bottom:					.09em solid #999;
+		-webkit-transition: 			background-color 550ms linear;
+		-moz-transition: 				background-color 550ms linear;
+		-o-transition: 					background-color 550ms linear;
+		transition: 					background-color 550ms linear;
+}	#miniLI {
+		background: 					transparent url(../images/persistent/ethosLogo.png) no-repeat;
+		background-position:			50% -.2em; 
+		-webkit-transition: 			background-color 150ms linear;
+		-moz-transition: 				background-color 150ms linear;
+		-o-transition: 					background-color 150ms linear;
+		transition: 					background-color 150ms linear;
+}	#miniLI:hover {
+		background-color:				#3cb2e5; /*#1449a0;*/
+		background-position:			50% -5.85em;
+} 	.topLI:active, .topLI:hover, .topLI.current {
+		background-color:				#e1f9ff; /*#dfeff3; /*#eff7f9;*/
+		color:							#000; 
+		text-shadow:					1px 1px 10px #fff;
+}	.topLI:active {
+		-ms-box-shadow:     			none; 
+		-moz-box-shadow:    			none; 
+		-webkit-box-shadow: 			none;
+		box-shadow:		    			none;
+		border:							.1em solid #999;
+	}
+	
+.footer {
+		margin-top:						5%;
+		display:						inline-block;
+}
+	.footerBar {
+		position:						relative;
+		padding:						.15em .2em 0 .8em;
+		color:							#666;
+		font-size:						1.2em;
+		height:							38px;
+		border-bottom:					solid 1px #999; 
+	}	.footerBar h3 { 
+		float:							left;
+		position:						relative; 
+		left:							7%; 
+		margin-top:						0em;
+	}	
+	.footerContent {
+		padding:						.7em .0em 1.1em .95em;
+		background-size:				100%; 
+		width:							100%;
+	}
+	.footerContent h3 { 
+		color: 							#4d4d4d; 
+		margin: 						0 0 4px 0; 
+	}
+	.contactFormDiv {
+		float: 							right; 
+		height:							220px;
+	} 
+	.contactField {
+		margin-top:						.8em;
+		border-radius:					.6em;
+		border:							1px solid #bcb8d0; 
+	}	
+	#contactTextFieldName, #contactTextFieldEmail {
+		height:							30px;
+	}	#contactTextFieldEmail {
+		margin-left:					7%;
+	}	#contactUsButton {
+		margin-top:						4%;
+		width:							40%;
+	}	#contactMainField {
+		height:							100px;
+		width:							90%;
+	}	#inputField {
+		height:							25px;
+		border:							1px solid #bcb8d0; 
+	}	#textField {
+		width:							100%;
+		height:							50px;
+		border:							1px solid #bcb8d0;
+	}	input:focus, textarea:focus, select:focus, textarea:focus {
+		-webkit-box-shadow: 			inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+		-moz-box-shadow: 				inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+		box-shadow: 					inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+		outline:						none;
+	} 
+	.contactResult {
+		display: 						none; 
+		padding: 						30px 0 0 30px;
+	}
+	.footerTitle {
+		float:							left;
+		margin-left:					3em;
+	}
+	#sitemap {
+		height:							220px;
+	} #sitemap ul {
+		padding:						0.2em;
+		margin:							0;
+		list-style-type:				none;
+	}
+	.column {
+		float:							left;
+		margin-left:					1%;
+	} .column a {
+		color:							#888;
+		line-height:					2em;
+	} .column a:hover {
+		color: 							#333;
+	}	.centered {
+		margin-right:					auto;
+		margin-left:					auto;
+		text-align:						center;
+	}	#servicesH1 {
+		display:						inline-block;
+		float:							left;
+		width:							100%;
+	}
+	.socialLinks {
+		list-style-type:				none;
+		width:							45%;
+	}	.socialLinks li {
+			background:						transparent url(../images/persistent/icon-set.png) 50% no-repeat;
+			background-color:				#666;
+			float:							right;
+			position:						relative;
+			right:							-100%;
+			margin:							-7% 2% 0 2%;
+			width:							32px;
+			height:							32px;
+	}	#linkedinIcon {
+			background-position:						2% 50%;
+	}	#facebookIcon {
+			background-position:						34% 50%;
+	}	#twitterIcon {
+			background-position:						68% 50%;
+	}	#googleIcon {
+			background-position:						99.4% 50%;
+	}	#linkedinIcon:hover {
+			background-color:						#3865b1;
+	}	#facebookIcon:hover {
+			background-color:						#6192d5;
+	}	#twitterIcon:hover {
+			background-color:						#4ca8e9;
+	}	#googleIcon:hover {
+			background-color:						#51c9db;
+	}
+	
+
+/*END SECTION-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Home Page  */
+
+.headerContain {
+	float:					left;
+	text-align:				center;
+	margin-right:			auto;
+	margin-left:			3%;
+} 
+
+.mainH1 {
+	margin-top:				0em;
+	font-size:				2.2em;
+	color:					#555;
+	text-shadow:			3px 3px 3px #999;
+}	.mainH1 span {
+	font-size:				2.1em;
+	color:					#444;
+}
+	#mainName {
+	font-size:				1.8em;
+	color:					#422d03;
+}
+
+.mainH3 {
+	color:					#14789d;
+	margin-top:				1%;
+} 
+
+.mainNav {
+	list-style-type:		none;
+}	.mainNavBox {
+	float:					left;
+	position:				relative;
+	color:					#422d03; 
+	background:				transparent url(../images/homepage/ethosIcons.jpg) 50% 2.6em no-repeat; 
+	background-color:		#c7edfc;/* #e2f7ff; #00b5f8;/*#def8ff; /*#eff7f9; /* #eaf7f9; #e4f5f8; */
+	text-align:				center;
+	margin:					6% 2.5% 0% 0%;
+	padding:				.5%;
+	height:					195px;
+	border-radius:			.8em;
+	-ms-box-shadow:     	0 0 .5em #888; 
+	-moz-box-shadow:    	0 0 .5em #888; 
+	-webkit-box-shadow: 	0 0 .5em #888;
+	box-shadow:		    	0 0 .5em #888;	 /*Some animation styling done through jQuery in index.php */ 
+}	#mainIconDesign {
+	background-position:	50% -23.2em;
+}	#mainIconPerformance {
+	background-position:	50% -54.5em;
+}	#mainIconFind {
+	background-position:	50% -81.7em;
+}	#mainIconBuild:hover, #mainIconBuild:active {
+	background-position:	50% -9.9em;
+}	#mainIconDesign:hover, #mainIconDesign:active {
+	background-position:	50% -38.45em;
+}	#mainIconPerformance:hover, #mainIconPerformance:active {
+	background-position:	50% -67.75em;
+}	#mainIconFind:hover, #mainIconFind:active {
+	background-position:	50% -94.4em;
+}	.mainNavBox h3 {
+	font-size:				.99em;
+}
+
+.mainNav h2 {
+	display: block;
+	position: static; 
+	width: 280px; 
+	color: #68CFF2;
+}
+
+.mainNavBox:hover {
+	color:					#fff;
+	background-color: 		#007fe0;/*#2655cc;/*#003fe0;/*#007fe0;/*#0f62a2;*/
+
+}	
+
+.mainNavBox:active {
+	color:					#fff;
+	-ms-box-shadow:     	0 0 0; 
+	-moz-box-shadow:    	0 0 0; 
+	-webkit-box-shadow: 	0 0 0;
+	box-shadow:		    	0 0 0;	
+	background-color: 		#007fe0;
+}
+
+.textColumns {
+	float:					left;
+	position:				relative;
+	left:					-1%;
+}
+
+/***SLIDER***/
+
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{
+	position: absolute; 
+	background: transparent url(../images/homepage/prev-next.png) no-repeat; 
+	width: 50px; 
+	height: 50px;
+}
+ul.bjqs-controls.v-centered li.bjqs-next a{
+	right: -6%;
+	opacity: .5;
+	background-position: 100.5% 50%;
+}	
+ul.bjqs-controls.v-centered li.bjqs-prev a{
+	left:  -6%;
+	opacity: .5;
+	background-position: -0.5% 50%;
+}	
+ul.bjqs-controls.v-centered li.bjqs-next a:hover, ul.bjqs-controls.v-centered li.bjqs-prev a:hover {
+	opacity: 1;
+}
+ol.bjqs-markers {
+	list-style: none; 
+	padding: 0; 
+	margin: 0 0 0 -9px; 
+	width:100%;
+}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a {
+	display:inline-block;
+	margin: .4em 0 0 1em;
+	width: 20px;
+	height: 20px;
+	border-radius:	20px;
+	background-color: #68cff2;
+	box-shadow: inset 0px 1px 1px #0b357d;
+}
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover {
+	background-color: #164fa8;
+}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+#banner-fade {
+	max-width:  100% !important; /* this effectively overwrites the strange inline styling. I do wish I could find the source of it though. */
+	max-height: 320px;  
+	box-shadow: .1em .1em .1em .1em #999;
+}
+.sliderTextContainer {
+	float: right; 
+}	.sliderTextContainer span {
+	display: block;
+}	.sliderTextContainer h1 {
+	margin-left: -2.2%;
+}	.sliderTextContainer p {
+	line-height: 180%;
+}
+.sliderImageContainer { 
+	float: left;
+	height:	100%;
+	max-height: 320px;
+}	
+
+/*END SECTION HOME PAGE---------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+/* SECTION:: Info Pages */
+
+
+/*	STYLING APPLICABLE TO ALL INFO PAGES */
+
+.infoPage {
+	
+}	#leftPage {
+	margin-left:			13.8%;
+}	.biggerPage {
+	width:					70%;
+}
+
+.rightIcon {
+	float:					right;
+	position:				relative;
+}	#iconEthos {
+	right:					17%;
+	margin-top:				15%;
+}
+
+.leftIcon {
+	float:					left;
+	position:				relative;
+}	#iconSingleLeft {
+	left:					15%;
+	margin-top:				15%;
+}	
+
+.menuUL {
+	list-style-type:		none;
+}	.menuLI {
+	float:					left;
+	width:					48%;
+	margin:					3% 9% 4% -7%;
+	padding:				2%;
+	border-radius:			.8em;
+	-ms-box-shadow:     	0 0 .5em #888; 
+	-moz-box-shadow:    	0 0 .5em #888; 
+	-webkit-box-shadow: 	0 0 .5em #888;
+	box-shadow:		    	0 0 .5em #888;
+}	.menuLI h2 {
+	text-align:				center;
+} 	
+
+.border {
+	position:				relative;
+	height:					100%;
+	min-height:				500px;
+	width:					1px;
+	margin-top:				3.5%;
+}	#rightLine {
+	float:					right;
+	position:				relative;
+	left:					-16.2%;
+}	#leftLine {
+	float:					left;
+	position:				relative;
+	left:					-2.5%;
+}	#bottomLine {
+	width:					100%;
+	height:					1px;
+}
+
+.pageH1 {
+	padding:				2em 0 .5em; 
+	font-size:				2em;
+}	.pageH1 span, .pageH2 span, .pageP span {
+	color:					#115eac;
+}	#menuH1 {
+	text-align:				center;
+	position:				absolute;
+	top:					25%;
+}
+
+.pageP, .pageH3 {
+	width:					70%;
+	line-height:			130%;
+	margin-left:			5%;
+}	.pageP {
+	font-size:				1.1em;
+	line-height:			140%;
+} 
+
+.pageLI {
+	width:					70%;
+}
+
+.pageUL {
+	line-height:			180%;
+}	#noListUL {
+	list-style-type:		none;
+}
+
+.pageLI {
+	font-size:				1.1em;
+}	.pageLI span {
+	font-weight:			bold;
+}
+
+.menuA {
+	text-decoration: 		underline !important;
+}
+
+/****SITE BUILDING PAGE****/ 
+
+#siteBuildingPage h1 {
+	width:								30%; 
+	color:								#fff; 
+	margin:								-27% 0 0 4%; 
+	line-height:						150%;
+	font-shadow:						1px 1px 1px #000; 
+	position:							relative;
+	z-index:							11;
+	padding:							0%;
+}	#siteBuildingInscription {
+	display:							block; 
+	font-size:							.5em; 
+	margin:								33% 0 0 0;
+	width:								130%;
+	color:								#472300;
+	text-shadow:						2px 2px 2px #fff;
+}
+
+#siteBuildingMainPic {
+	margin-top:							2%;
+}
+
+#siteBuildingPage img {
+	max-width: 							100%;
+	position:							relative; 
+	z-index:							10;
+	margin-top:							3%;
+}
+
+#siteBuildingPage section {
+	width:							32%;
+	float:							left;
+}	.ties {
+	height: 						300px; 
+	background: 					transparent url(../images/legalwebsite-page/ties.jpg) no-repeat;
+	width:							100%;
+	float:							left;
+	position:						relative; 
+	margin:							-35% 0 0 6%;
+	z-index:						1;
+	border:							1px solid #dedede; 
+	cursor: 						pointer;
+}		#Tie1 {
+	background-position: 			-12.5% 95%;
+}		#Tie2 {
+	background-position:			50.5% 70%;
+}		#Tie3 {
+	background-position:			113% 44%;
+}	.ties:hover {
+	top:							5px;
+}	.ties:active {
+	top:							10px;
+}	.ties h3 {
+	margin-top:						80%;
+	color:							#666;
+}		#Tie1 h3 {
+		margin-left:				38.5%;
+}		#Tie2 h3 {
+		margin-left:				40%;
+}		#Tie3 h3 {
+		margin-left:				39%;
+}	#siteBuildingBanner {
+		position:					absolute; 
+		top:						35%; 
+		left: 						23%; 
+		z-index:					15;
+}
+
+#siteBuildingTextContainer {
+	width:							100%;
+	height:							350px;
+	float:							left;
+	margin:							1% 0 -2.5% 0;
+	padding:						0% 5% 0% 5%;
+}	#siteBuildingTextContainer p, #siteBuildingTextContainer li {
+	width:							80%;
+}	#siteBuildingTextContainer h2 {
+	font-size:						2em;
+}	#siteBuildingTextContainer span {
+	font-size:						1.05em;
+	color:							#000;
+}
+
+/****LOW PRICES PAGE****/ 
+
+#lowPricesPage {
+	width:					100%;
+	height:					100%;
+	margin:					4% 0 0 0;
+} 	#lowPricesPage h1 {
+		font-size:			2em;
+		position:			absolute;
+		color:				#dae0cd;
+		top:				4%; 
+		left:				40%;
+		text-shadow:		1px 1px 1px #000;
+		z-index:			10;
+}		#lowPricesPage h1 span {
+			font-size:			0.6em;
+			display:			inline-block;
+			margin:				14% 0% 14% 31%;
+}	
+
+#affordableMainImage {
+	max-width:				100%;
+	position:				relative;
+	z-index:				10;
+	margin-top:				.7%;
+}
+
+#lowPricesPage section {
+	width:				32%;
+	float:				left;
+}	.lamp {
+		height: 			150px; 
+		background: 		transparent url(../images/affordable-page/lamps.jpg) 0% 109% no-repeat;
+		width:				100%;
+		float:				left;
+		position:			relative; 
+		margin-top:			-1%;
+		cursor: 			pointer;
+}	.lampText { 
+		position:			relative;
+		width: 				100% !important;
+		height:				220px;
+		transition:			all 2s;
+		-webkit-transition: all 2s; 
+		display:			inline-block;
+		margin:				1% 0 0 3%;
+}		.lampText h3 {
+			font-size:			2em; 
+			width:				65%;
+			text-align:			center;
+			margin:				1% 0 0 -9%;
+			text-shadow: 		1px 1px 2px #555;
+			transition:			all 2s;
+			-webkit-transition: all 2s; 
+			color: 				#fffadd; /* The lampLeft h3 color is here, and needs to be here to ensure the h3 does not transition on load */ 
+}		.lampText p {
+			width:				60%; 
+			line-height:		1.5;
+			margin:				2%; 
+}		.lampCenter {
+			margin:				1% 0 0 19%;
+}			.lampText.lampCenter h3 {	
+				color: 				#913818;
+				margin-left:		-2%;
+}		.lampRight {
+			margin:				1% 0 0 32%;
+			text-align:			right;
+}			.lampText.lampRight h3 {
+				color: 				#82b5ac;
+				margin-left:		2%;
+}		.leftLit {
+			background-position: 0% 5%;
+}		.centerLit {
+			background-position: 50% 7%;
+}		.rightLit {
+			background-position: 100% 6%;
+}
+
+.affordableNotice {
+	position:					absolute;
+	color: 						#e0e0e0;
+	z-index:					10;
+}	#secondAffordableNotice {
+	left:						55%;
+}
+
+
+#affordableBottomList {
+	float:					left;
+	width:					100%;
+	height:					250px; 
+	display:				inline-block;
+	margin:					2.5% 0 -1% 0;
+	text-align:				center; 
+	font-weight:			bold;
+}		#affordableBottomList ul {
+	list-style-type:		none; 
+}		#affordableBottomList li {
+	width:					20%; 
+	box-shadow:				1px 1px 1px #999;
+	border:					1px solid #999;
+	float:					left;
+	height:					150px; 
+	margin:					0% 0 0 3.2%;
+	background:				transparent url(../images/affordable-page/ethos-web-solutions-plain-icons.png) 50% no-repeat;
+	-webkit-transition: 			background-color 450ms linear;
+	-moz-transition: 				background-color 450ms linear;
+	-o-transition: 					background-color 450ms linear;
+	transition: 					background-color 450ms linear;
+}			#affordableBuildIcon {
+	background-position:	-4% -200% !important;
+}			#affordableDesignIcon {
+	background-position:	31% -150% !important;
+}			#affordablePerformanceIcon {
+	background-position:	67% -150% !important;
+}			#affordableFindIcon {
+	background-position:	102% -350% !important;		
+}		#affordableBottomList li:hover {
+	background-color:		#e1f9ff;
+}		#affordableBottomList li:active {
+	box-shadow:				0px 0px 0px #fff; 
+}
+
+/*******Quality Page********/
+
+#qualityPage section {
+	float:	left;
+}	#qualityPage section p {
+	font-size: 		1.1em;
+	position:		relative;
+	z-index:		10;
+}	#qualityRightText {
+	display:		inline-block;
+	text-align: 	right;
+}	
+
+#qualityPage h1 {
+	float: left;
+	width: 100%;
+	position: relative; 
+	z-index: 10; 
+	color: #ffe204;
+	text-shadow: 1px 1px 1px #191b32;
+} 	#qualityPage h3 {
+	position: relative; 
+	z-index: 10; 
+	color: #1897C7;
+}
+
+.clockWrapper {
+    position: absolute;
+    width: 335px;
+    height: 425px; 
+}	#clock, #seconds, #minutes, #hours {
+		position: absolute;
+		display: inline-block;		
+}	
+
+/*******Privacy Policy********/
+
+#privacyPolicyH1 {
+	margin: 6% 0 0 0;
+}
+
+/*END SECTION Info Pages--------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+/* SECTION:: Buttons & Utility  */
+
+.button, #edit-submit, .item-list.first {
+	background:							#1897c7;
+	text-align:							center;
+	background:							-moz-linear-gradient(top, #0065b3, #35c8ff);
+	background: 						-webkit-gradient(linear, left top, left bottom, from(#0065b3), to(#35c8ff));
+	line-height:						1em;
+	white-space:						nowrap;
+	text-decoration:					none;
+	color:								#ffffff;
+	cursor: 							pointer;
+	text-shadow:						0 1px 1px rgba(0, 0, 0, .5);
+	-ms-box-shadow:     				.1em .1em .1em #316dbf; 
+	-moz-box-shadow:    				.1em .1em .1em #316dbf; 
+	-webkit-box-shadow: 				.1em .1em .1em #316dbf;
+	box-shadow:		    				.1em .1em .1em #316dbf;	
+	-webkit-border-radius:				.8em; 
+	-moz-border-radius:					.8em; 
+	border-radius:						.8em; 
+}
+
+.button:hover, .button.infoBox:hover {
+	background: 						#00b5f8;
+	background: 						-webkit-gradient(linear, left top, left bottom, from(#1897c7), to(#0065b3));
+	background: 						-moz-linear-gradient(top, #1897c7,  #0065b3); 
+}
+
+.button:active, .button.red:active	{
+	-ms-box-shadow:     				0 0 0; 
+	-moz-box-shadow:    				0 0 0; 
+	-webkit-box-shadow: 				0 0 0;
+	box-shadow:		    				0 0 0;	
+	}
+	
+.button.medium {
+	font-size:							1.2em;
+	padding:							1.4%;
+	width:								25%;
+	min-width:							100px;
+}	#submitButton {
+	margin-top:							1%;
+}
+
+
+/*END SECTION-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+/* SECTION:: Experimental Pages / Under Construction */
+
+/******** DENVER PAGE *********/
+
+#denverPage {
+	width: 1070px;
+	height: 550px; 
+}
+
+.lightningContainer { 
+	width: 110%;
+	margin: 4.5% 0 0 0; 
+} 	.lightningContainer * { 
+	float: left;
+	position: relative; 
+	left: -5.3%; 
+	margin: 0; 
+	padding: 0; 
+}	.lightningContainer img { 
+	width: 80%; 
+	margin-bottom: 2%; 
+}	.lightningContainer span { 
+	width: 10%; 
+	height: 250px; 
+	background-color: #fff; 
+	position: relative; 
+	z-index: 10; 
+} 
+
+#denverPage h1 {
+	position: absolute; 
+	top: 5%; 
+	left: 30%; 
+	color: #fff; 
+	text-shadow: -1px -1px 0 #999; 
+	z-index: 10; 
+}
+
+.theClouds {
+	position:				absolute; 
+	height:					10%;
+	width:					15%;
+	left: 					14%; 
+}	#stormCloud {
+	background: 			transparent url(../images/denver-page/Storm_Cloud.png) 50% no-repeat;
+	top:					7%; 
+}	#happyCloud1 {
+	background: 			transparent url(../images/denver-page/Happy_Cloud.png) 50% no-repeat;
+	top: 					2%; 
+}	#happyCloud2 {
+	background: 			transparent url(../images/denver-page/Happy_Cloud.png) 50% no-repeat;
+	top: 					9%; 
+}
+
+#theLightning { 
+	margin: 16% 0 0 35%;
+	width: 32%; 
+}
+
+.denverTextContainer {
+	width: 75%; 
+	margin: 0 6% 0 6%; 
+}	.denverTextContainer p {
+	line-height: 150%; 
+}
+
+/*END SECTION-------------------------------------------------------------------*/

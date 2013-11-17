@@ -1,0 +1,696 @@
+/**************************************************************
+/* public.css
+/* BCase 08/29/12
+/*
+/*	Styles for ethos-web-solutions.com
+/*************************************************************/
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Global HTML Resets */
+
+html, body { 
+padding: 						0; 
+margin: 						0; 
+}
+
+body, head {
+	font-size:					1em; 
+	font-family:				ColaborateLightRegular, Arial, sans-serif; 
+	color:						#555555;
+	background: 				#fff;;
+}
+
+@font-face {
+    font-family: 'ColaborateLightRegular';
+    src: url('fonts/colaborate/ColabLig-webfont.eot');
+    src: url('fonts/colaborate/ColabLig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/colaborate/ColabLig-webfont.woff') format('woff'),
+         url('fonts/colaborate/ColabLig-webfont.ttf') format('truetype'),
+         url('fonts/colaborate/ColabLig-webfont.svg#ColaborateLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a img { 
+	border: 					0; 
+}
+
+h1 {
+	font-family: 				Arial, sans-serif;
+	margin: 					.4em 0;
+	color: 						#444;
+	padding: 					.4em;
+} 
+
+hr { border: 1px solid #cfcecd; border-left: none; border-right: none; height: 3px; }
+
+a, a:hover	{ text-decoration: none; color: #1897c7; }
+
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Container and Query Definitions */
+
+/* MAIN CONTAINER DEFINITIONS */
+#container {
+		background:						#fff; 
+		min-height:						100%;
+		height:							100%; 
+		margin:							0 auto 0 auto;
+		width:							1070px;
+}	.mainLogo {
+		margin-left:					3%;
+		width:							50%;
+}	#mainSell {
+		width:							60%;
+		margin-left:					21.5%;
+}	#mainSell span {
+	color:								#14789d;/*#157fa6;*/
+}	#footer {
+		width:							100%; 
+} 	#sitemap {
+		width:							50%;
+}	.column {
+		width:							32%;
+}	.mainH1 {
+		width:							60%;
+		margin-left:					21.9%;
+}	#mainH1Sell {
+		margin-top:						4%;
+}	.infoPage {
+		width:							65%;
+}	.topLI {
+		width:							11.5%;
+		position:						absolute;		
+}	#miniLI {
+		left:							11.3%;
+		width:							7.45%;
+}	#LIChoose {
+		left:							19%;
+}	#LIService {
+		left:							30.7%;
+}	#LIPricing {
+		left:							42.37%;
+}	#LIBlog {
+		left:							54.1%;
+}	#LIContact {
+		left:							65.85%;
+}	.topLI p {
+		margin-top:						4%; 
+}	/*
+	.topUL {
+		margin:							-1.5% 0% 0% -12%;
+}	.topLI {
+		width:							220px;
+		margin-left:					-10.5%;
+		position:						relative;	
+		float:							left;
+}*/	#miniLI:hover {
+		background-position:			50% -5.97em;
+} 	.mainNavBox {
+		width:							20.5%;
+}	.bottomInfo {
+		float:							left;
+		position:						relative;
+}	.contactFormDiv {
+		margin-right:					2.2em; 
+		width: 							44%; 
+} 	#inputField {
+		width:							48.3%;
+}	#privacyPolicy {
+		left:							6%;
+}	#emailUs {
+		left:							28.5%;
+}	#mapH3 {
+		margin-left:					10%;
+}	#contactH3 {
+		margin-left:					45.5%;
+}	.button.contact {
+	font-size:							1.5em;
+	padding:							2.8%; 
+	width:								60%;
+	float:								left;
+	position:							relative;
+	left:								2.5%;
+/*	margin-left:			6%; */
+}	.pageH1 {
+	width:								80%;
+}	.pageH2 {
+	margin-left:						2%;
+}	#servicesH1 {
+		margin:							3% 0 3% 0;
+}	.bottomNavH4 {
+		position:						absolute;
+		top:							-9999px;
+		left:							-9999px;
+}	.textColumns {
+		margin:							0% 1% 0% 2%;
+		width:							21.5%;
+		font-size:						1.2em;
+}	#rightPage{ 
+		margin-left:					36.3%;
+		width:							60%;
+}	.topContactBlock {
+		float:							left;
+		width:							100%;
+		position:						relative;
+		margin:							-12% 0 6% 0;
+}		#leftCell, #rightCell {
+			float:							left;
+			position:						relative;
+			width:							44%;
+}		#leftCell {
+			left:							0%;
+}		#rightCell {
+			left:							5%;
+}		#leftCell input {
+			margin-left:					-1%;
+}		#rightCell input {
+			margin-left:					-3%;
+}	.bottomExplain {
+		list-style-type:				none;
+}	#contactUsQuery {
+		margin-top:						3%;
+}
+/*	Experimental */
+	#secondHeader {
+		width:							100%;
+		margin-left:					-1%;
+}	#mainLogoV2 {
+		margin-left:					-7%;
+}
+
+	#headerContain3 {
+		width:							100%;
+		margin-left:					-6%;
+	}
+
+/* END SECTION: Container and Query Definitions */
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Page Architecture  */
+
+.topUL {
+		list-style-type:				none;
+}	.topLI {
+		top:							0;
+		color:							#444;
+		text-align:						center;
+		height:							40px;
+		border:							.09em solid #999;
+}	#miniLI {
+		background: 					transparent url(../images/ethosLogo.png) no-repeat;
+		background-position:			50% -.3em; 
+}	#miniLI:hover {
+		background-color:				#3cb2e5; /*#1449a0;*/
+} 	.topLI:active, .topLI:hover, .topLI.current {
+		background-color:				#e1f9ff; /*#dfeff3; /*#eff7f9;*/
+		color:							#000; 
+		text-shadow:					1px 1px 10px #fff;
+		cursor:							pointer;
+}	.topLI:active {
+		-ms-box-shadow:     			none; 
+		-moz-box-shadow:    			none; 
+		-webkit-box-shadow: 			none;
+		box-shadow:		    			none;
+		border:							.1em solid #999;
+	}
+	
+.footer {
+		width:							100%; 
+		margin-top:						5%;
+		display:						inline-block;
+}
+	.footerBar {
+		position:						relative;
+		padding:						.15em .2em 0 .8em;
+		color:							#666;
+		font-size:						1.2em;
+		height:							38px;
+		border-bottom:					solid 1px #999; 
+	}	.footerBar h3 { 
+		float:							left;
+		position:						relative; 
+		left:							7%; 
+		margin-top:						0em;
+	}	
+	.footerContent {
+		padding:						.7em .0em 1.1em .95em;
+		background-size:				100%; 
+		width:							100%;
+	}
+	.footerContent h3 { 
+		color: 							#4d4d4d; 
+		margin: 						0 0 4px 0; 
+	}
+	.contactFormDiv {
+		float: 							right; 
+		height:							220px;
+	} 
+	.contactField {
+		margin-top:						.8em;
+		border-radius:					.6em;
+		border:							1px solid #bcb8d0; 
+	}	
+	#contactUsDiv {
+		width:							80%;
+		margin-top:						10%;
+		float:							left;
+	}
+	#contactTextFieldName, #contactTextFieldEmail {
+		height:							30px;
+	}	#contactTextFieldEmail {
+		margin-left:					7%;
+	}	#contactUsButton {
+		margin-top:						4%;
+		width:							40%;
+	}	#contactMainField {
+		height:							100px;
+		width:							90%;
+	}	#inputField {
+		height:							25px;
+		border:							1px solid #bcb8d0; 
+	}	#textField {
+		width:							100%;
+		height:							50px;
+		border:							1px solid #bcb8d0;
+	}	input:focus, textarea:focus, select:focus, textarea:focus {
+		-webkit-box-shadow: 			inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+		-moz-box-shadow: 				inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+		box-shadow: 					inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+		outline:						none;
+	} 
+	.contactResult {
+		display: 						none; 
+		padding: 						30px 0 0 30px;
+	}
+	.footerTitle {
+		float:							left;
+		margin-left:					3em;
+	}
+	#sitemap {
+		height:							220px;
+	} #sitemap ul {
+		padding:						0.2em;
+		margin:							0;
+		list-style-type:				none;
+	}
+	.column {
+		float:							left;
+		margin-left:					1%;
+	} .column a {
+		color:							#888;
+		line-height:					2em;
+	} .column a:hover {
+		color: 							#333;
+	}	.centered {
+		margin-right:					auto;
+		margin-left:					auto;
+		text-align:						center;
+	}	#servicesH1 {
+		display:						inline-block;
+		float:							left;
+		width:							100%;
+	}
+
+/*END SECTION-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Home Page  */
+
+.headerContain {
+	float:					left;
+	text-align:				center;
+	margin-right:			auto;
+	margin-left:			auto;
+} 
+
+.mainH1 {
+	margin-top:				0em;
+	font-size:				2.2em;
+	color:					#555;
+	text-shadow:			3px 3px 3px #999;
+}	.mainH1 span {
+	font-size:				2.1em;
+	color:					#444;
+}
+
+.mainH2 {
+/*	text-align:				center; */
+	position:				relative;
+}	#mainName {
+	font-size:				1.8em;
+	color:					#422d03;
+}	#mainDirect {
+	margin-left:			34%;
+	display:				inline;
+}
+
+.mainH3 {
+	color: 					#1897c7;
+	margin-top:				1%;
+} 
+
+.mainNav {
+	list-style-type:		none;
+}	.mainNavBox {
+	float:					left;
+	position:				relative;
+	color:					#422d03; 
+	background:				transparent url(../images/ethosIcons.png) 50% 3.6em no-repeat;
+	background-color:		#def8ff; 
+	text-align:				center;
+	margin-top:				0%;
+	margin-right:			2.5%;
+	padding:				.5%;
+	height:					195px;
+	border:					1px #888 solid;
+	cursor:					pointer;
+}	#mainIconBuild {
+	margin-left:			2.5%;
+}	#mainIconDesign {
+	background-position:	50% -25.2em;
+}	#mainIconPerformance {
+	background-position:	50% -53.2em;
+}	#mainIconFind {
+	background-position:	50% -83.7em;
+}	.mainNavBox:hover, .mainNavBox:active {
+	color:					#fff;
+	background-color: 		#00b5f8;
+}	#mainIconBuild:hover, #mainIconBuild:active {
+	background-position:	50% -8.41em;
+}	#mainIconDesign:hover, #mainIconDesign:active {
+	background-position:	50% -36.65em;
+}	#mainIconPerformance:hover, #mainIconPerformance:active {
+	background-position:	50% -64.93em;
+}	#mainIconFind:hover, #mainIconFind:active {
+	background-position:	50% -95.29em;
+}
+ 
+.mainNavBox:hover {
+	color:					#fff;
+	background-color: 		#00b5f8;
+}	
+
+.mainNavBox:active {
+	color:					#fff;
+	-ms-box-shadow:     	0 0 0; 
+	-moz-box-shadow:    	0 0 0; 
+	-webkit-box-shadow: 	0 0 0;
+	box-shadow:		    	0 0 0;	
+	background-color: 		#00deff;
+}
+
+.textColumns {
+	float:					left;
+	position:				relative;
+	left:					-1%;
+}
+
+/*END SECTION HOME PAGE---------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+/* SECTION:: Info Pages */
+
+
+/*	ALL PAGES */
+
+.infoPage {
+	
+}	#leftPage {
+	margin-left:			13.8%;
+}	.biggerPage {
+	width:					70%;
+}
+
+.rightIcon {
+	float:					right;
+	position:				relative;
+}	#iconEthos {
+	right:					17%;
+	margin-top:				15%;
+}
+
+.leftIcon {
+	float:					left;
+	position:				relative;
+}	#iconSingleLeft {
+	left:					15%;
+	margin-top:				15%;
+	width;					5%;
+}	
+
+.menuUL {
+	list-style-type:		none;
+}	.menuLI {
+	float:					left;
+	width:					48%;
+	margin:					3% 9% 4% -7%;
+	padding:				2%;
+	border-radius:			.8em;
+	-ms-box-shadow:     	0 0 .5em #888; 
+	-moz-box-shadow:    	0 0 .5em #888; 
+	-webkit-box-shadow: 	0 0 .5em #888;
+	box-shadow:		    	0 0 .5em #888;
+}	.menuLI h2 {
+	text-align:				center;
+} 	
+
+.border {
+	position:				relative;
+	height:					120%;
+	min-height:				500px;
+	width:					1px;
+	margin-top:				3.5%;
+}	#bottomLine {
+	width:					100%;
+	height:					1px;
+}	#rightLine {
+	display:				none;
+}	#leftLine {
+	display:				none;
+}
+
+.pageH1 {
+	padding:				2em 0 .5em; 
+	font-size:				2em;
+}	.pageH1 span, .pageH2 span {
+	color:					#1897c7;
+}	#menuH1 {
+	text-align:				center;
+	position:				absolute;
+	top:					25%;
+}
+
+.pageP, .pageH3 {
+	width:					70%;
+	line-height:			130%;
+	margin-left:			5%;
+}	.pageP {
+	font-size:				1.1em;
+	line-height:			140%;
+} 
+
+.pageNote {
+	position:				absolute;
+	right:					15%;
+	top:					30%;
+	width:					10%;
+}
+
+.pageUL {
+	line-height:			180%;
+}	#noListUL {
+	list-style-type:		none;
+}
+
+.pageLI {
+	font-size:				1.1em;
+}	.pageLI span {
+	font-weight:			bold;
+}
+
+.menuA {
+	text-decoration: 		underline !important;
+}
+
+/*END SECTION Info Pages--------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+/* SECTION:: Buttons & Utility  */
+
+.button, input[type=submit], input[type=button] {
+	background:				#1897c7;
+	text-align:				center;
+	line-height:			1em;
+	white-space:			nowrap;
+	text-decoration:		none !important;
+	color:					#22222 !important;
+	cursor: 				pointer;
+	text-shadow:			0 1px 1px rgba(0, 0, 0, .5);
+}
+
+.button:hover, .button.infoBox:hover {
+	background: 			#00b5f8;
+}
+	
+.button.medium {
+	font-size:				1.2em;
+	padding:				1.4%;
+	width:					25%;
+	min-width:				100px;
+}	#submitButton {
+	margin-top:				1%;
+}
+
+
+/*END SECTION-------------------------------------------------------------------*/
+
+
+/*BEGIN SECTION : TESTING AREA--------------------------------------------------*/
+
+#mainH1SellV2 {
+		width:							100%;
+		display:						none;
+}	
+#mainLogoV2 {
+		margin-top:						6%;
+}
+#mainSellV2 {
+		width:							60%;
+		margin-left:					21.5%;
+		margin-top:						4.5%;
+		margin-bottom:					4.5%;
+}
+
+/*END SECTION-------------------------------------------------------------------*/
+
+
+/*BEGIN SECTION : AD LANDING PAGES----------------------------------------------*/
+
+.topLandingContainer {
+	float: 								left; 
+	margin-top:							4.5%;
+	height:								150px;
+}
+#TwentyFiveOff {
+	float:								left;
+	position:							relative;
+	left:								-25%;
+	font-size:							3.7em;
+	margin:								0 0 -5% 20%; 
+	text-shadow:						1px 1px #888;
+	width:								100%;
+	display:							block;
+}
+.randoCodeContainer {
+	float:								right; 
+	width:								50%;
+	margin-top:							4.5%;
+	height:								330px;
+	border-left:						1px solid #dfdfdf;
+}
+#randoCodeElement {
+	margin:								10.5% 0 0 6.5%;
+}
+.randoCode {
+	font-size:							2.2em;
+	color:								#1897c7;
+}
+.landingDisclaimerContainer {
+	float:								left;
+	width:								50%;
+	height:								180px; 
+}	.landingDisclaimerContainer p {
+	font-size:							1.2em;
+	line-height:						150%;
+	width:								80%;
+	position:							relative;
+}	.landingDisclaimerContainer p:first-child {
+	margin-top:							-5%;
+}	.landingDisclaimerContainer p span {
+	font-weight:						bold;
+} 	.landingDisclaimerContainer h3 {
+	position:							absolute; 
+	left:								46.8%;
+	color:								#1897c7;
+}	
+.mainNavBox2 {
+	margin:								6% 0 0 3.8%;
+	background-color:					#f2fbfe;
+	width:								21%;
+	border: 							1px solid #d1d4da;
+}
+
+
+
+/*END SECTION-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------------*/
+/* SECTION:: Experimental Pages */
+
+#mainH1V4 {
+	text-shadow: 			1px 1px 1px #999;
+}
+
+#mainLogoV4 {
+	margin:					-2% 0 0 -22%;
+}
+
+#V4Call {
+	padding:				2.5%;
+	position:				absolute;
+	margin:					1.5% 0 0 2%;
+	font-size:				1.17em;
+
+}
+
+#mainSellV4{
+	color:					#777;
+	margin:					1% 0 0 13%;
+}	
+
+.mainNavBoxV4{
+	margin-top:				-2%;
+	background-color:		#fff;
+}
+
+.mainNavParent {
+	height:					460px;
+	width:					31%;
+	float:					left;
+	margin-left:			2%;
+}	#leftNavParent {
+	margin-left:			0%;
+	border-right:			1px solid #dddddd;
+}	#centerNavParent {
+	border-right:			1px solid #dddddd;
+}	#rightNavParent {
+
+}	.mainNavParent h3 {
+	color:					#1251ad;
+}	.mainNavParent h4 {
+	padding-top:			28%;
+	margin-top:				59%;
+}	.mainNavParent p {
+	line-height:			170%;
+}
+
+.mainNavBoxV4 {
+	width:					100%;
+	height:					260px;
+}	#mainIconValue {
+	background: 					transparent url(../images/value.jpg) no-repeat;
+	background-position:			50% 1.1em;
+}	#mainIconTrust {
+	background:						transparent url(../images/trust.jpg) no-repeat;
+	background-position:			50% 0em;
+}	#mainIconQuality {
+	background:						transparent url(../images/quality.jpg) no-repeat;
+	background-position:			50% 0em;
+}	
+
+/*END SECTION-------------------------------------------------------------------*/

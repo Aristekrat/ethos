@@ -1,0 +1,25 @@
+<div class="infoPage" id="leftPage">
+	<h1 class="pageH1">Contact Us:<span> It's easy</span></h1>
+
+    <div class="contactFormDiv" id="mainContactForm">
+        <form action="JavaScript:void(0);" onsubmit="JavaScript: submitMainContact(this);"><!-- TO-DO: Get rid of this hard-coded form-call -->
+			<div class="topContactBlock">
+				<div id="leftCell">
+			  		<h4>Name</h4>
+			  		<input autofocus type="text" name="name" maxlength="50" size="35" class="contactField" id="contactTextFieldName" />
+				</div>
+				<div id="rightCell">
+			  		<h4>Email</h4>
+			  		<input type="text" name="email" maxlength="50" size="35" class="contactField" id="contactTextFieldEmail" />
+				</div>
+			</div>	
+			<h4 class="contactUsH4" id="contactUsQuery">What Help Do You Need?</h4>
+			<textarea name="message" class="contactField" id="contactMainField" ></textarea>
+	        <input type="submit" class="button contact" id="contactUsButton" value="Submit"  />
+        </form>
+		
+		<div style="display: none; padding: 30px 0 0 30px;"><!-- TO DO : GET RID OF THIS -->
+          <h4>Thank you for your message! We'll be contacting you as soon as possible.</h4>
+        </div>
+    </div>
+</div>

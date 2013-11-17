@@ -1,0 +1,1051 @@
+/**************************************************************
+/* public.css
+/* BCase 08/29/12
+/*
+/*	Styles for ethos-web-solutions.com
+/*************************************************************/
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Global HTML Resets */
+
+html, body { 
+padding: 						0; 
+margin: 						0;
+border:							0; 
+}
+
+body, head {
+	font-size:					1em; 
+	font-family:				ColaborateLightRegular, Arial, sans-serif; 
+	color:						#555555;
+	background: 				#fff;;
+}
+
+@font-face {
+    font-family: 'ColaborateLightRegular';
+    src: url('fonts/colaborate/ColabLig-webfont.eot');
+    src: url('fonts/colaborate/ColabLig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/colaborate/ColabLig-webfont.woff') format('woff'),
+         url('fonts/colaborate/ColabLig-webfont.ttf') format('truetype'),
+         url('fonts/colaborate/ColabLig-webfont.svg#ColaborateLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a img { 
+	border: 					0; 
+}
+
+h1 {
+	font-family: 				Arial, sans-serif;
+	margin: 					.4em 0;
+	color: 						#444;
+	padding: 					.4em;
+} 
+
+hr { border: 1px solid #cfcecd; border-left: none; border-right: none; height: 3px; }
+
+a { text-decoration: none; color: #1897c7;}
+a:hover { color: #115eac; }
+
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+::-webkit-input-placeholder { /*This repetition is apparently necessary */ 
+   font-family: 'ColaborateLightRegular';
+   font-size: 1.1em;
+   color: #cacdcd;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-family: 'ColaborateLightRegular'; 
+   font-size: 1.1em;
+   color: #cacdcd;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family: 'ColaborateLightRegular';  
+   font-size: 1.1em;
+   color: #cacdcd;
+}
+
+:-ms-input-placeholder {  
+   font-family: 'ColaborateLightRegular';  
+   font-size: 1.1em;
+   color: #cacdcd;
+}
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Container and Query Definitions */
+
+/* MAIN CONTAINER DEFINITIONS */
+#container {
+		background:						#fff; 
+		min-height:						100%;
+		height:							100%; 
+		margin:							0 auto 0 auto;
+		width:							1070px;
+}	
+.topLI {
+		width:							10.5%;
+		margin-left:					5%;
+		position:						absolute;
+		display:						inline-block;
+		height:							45px;
+}	#miniLI {
+		left:							15%;
+		width:							5.85%;
+}	#LIChoose {
+		left:							21%;
+}	#LIService {
+		left:							31.7%;
+}	#LIPricing {
+		left:							42.37%;
+}	#LIBlog {
+		left:							53%;
+}	#LIContact {
+		left:							63.7%;
+}	.topLI p {
+		margin-top:						5%; 
+}
+.footer {
+		width:							100%; 
+} 	.column {
+		width:							17%;
+}	.mainH1 {
+		width:							60%;
+		margin-left:					21.9%;
+}	#mainH1Sell {
+		margin-top:						3%;
+}	.infoPage {
+		width:							65%;
+}		.mainNavBox {
+		width:							22%;
+}		.mainNav h2 {
+		margin: 						5% auto -2.5% auto; 
+}		.bottomInfo {
+		float:							left;
+		position:						relative;
+}	.contactFormDiv {
+		margin-right:					2.2em; 
+		width: 							41%; 
+} 	#inputField {
+		width:							49.3%;
+}	#privacyPolicy {
+		left:							6%;
+}	#mapH3 {
+		margin-left:					10%;
+}	#contactH3 {
+		margin-left:					45.5%;
+}	.button.contact { /* This code block will almost certainly require revision after the redesign */ 
+		font-size:						1.5em;
+		padding:						2.8%; 
+		width:							60%;
+		float:							left;
+		position:						relative;
+		left:							2.5%;
+}		.button.contact.professionalCallButton {
+		margin:							8% 0 0 -2%; 	
+		width:							38%;
+
+}		.button.contact.affordableCallButton {
+		margin:							2% 0 0 27%;
+		width:							38%;
+}		.button.contact.buildWebsiteCallButton {
+		margin:							4% 0 0 0%;
+		width:							38%;
+		left:							24%;
+}
+	.pageH1 {
+		width:							80%;
+}		#ethosApproach {
+		margin-top:						-5.50%;
+}	.pageH2 {
+		margin-left:					2%;
+}	#servicesH1 {
+		margin:							3% 0 3% 0;
+}	.bottomNavH4 {
+		position:						absolute;
+		top:							-9999px;
+		left:							-9999px;
+}	.textColumns {
+		margin:							0% 1% 0% 2%;
+		width:							21.5%;
+		font-size:						1.2em;
+}	#rightPage{ 
+		margin-left:					36.3%;
+} 	.topContactBlock {
+		float:							left;
+		width:							100%;
+		position:						relative;
+		margin:							-15% 0 6% 0;
+}		#leftCell, #rightCell {
+			float:							left;
+			position:						relative;
+			width:							44%;
+}		#leftCell {
+			left:							0%;
+}		#rightCell {
+			left:							5%;
+}		#leftCell input {
+			margin-left:					-1%;
+}		#rightCell input {
+			margin-left:					-3%;
+}	.bottomExplain {
+		list-style-type:				none;
+}	#pricesDisclaimer {
+		width:							65%;
+}	.column li a {
+		margin:							3% 0;
+		display:						block; 
+		font-size:						.9em;
+}	#mainContactForm {
+		width:							80%;
+		margin-top:						10%;
+		float:							left;
+}	
+
+#banner-fade {
+	margin: 5.5% 0 0 0; 
+	border: 1px solid #eee;
+}	.sliderImageContainer {
+	background:	transparent url(../images/slider/lawfirm-web-design-specialists.jpg) 50% no-repeat;
+	background-size: 310%;
+	width: 50% !important;
+}	#sliderPanelOne {
+	background-position: 0% 50%;
+}	#sliderPanelTwo {
+
+}	#sliderPanelThree {
+	background-position: 98.7% 50%; 
+}	
+.sliderTextContainer {
+	width: 50%;
+}	.sliderTextContainer span {
+	margin: 26% 2% 2% 2%;
+}
+
+#qualityPage {
+	width: 1050px;	
+}	#qualityPage section {
+	width:	30%; 
+}	#qualityRightText {
+	margin-left:	40%; 
+}	#qualityPage h1 {
+	margin: 2% 0 0 0%;
+	left: 25.5%; 
+	white-space: pre;
+	color:	#555 !important;
+} 	
+
+.clockWrapper {
+      	top: 4em; 
+      	left: 40.5%;  
+}	#clock {
+		top: 1px; 
+		left: 0.2em; 
+}	#seconds {
+		left: 10.1em;
+		top: 6.2em; 
+}	#minutes {
+		left: 9.8em;
+		top: 6.2em;
+}	#hours {
+		left: 9.8em;
+		top: 8.2em;
+}	#noFigCaption {
+	margin-left:	18%;
+}	#cannotTransform {
+	display:	none;
+}
+
+.affordableNotice {
+	top:						26em;
+	left:						39%;
+}	#secondAffordableNotice {
+	left:						55%;
+}
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Page Architecture  */
+
+.topUL {
+		list-style-type:				none;
+}	.topLI {
+		top:							0;
+		color:							#444;
+		text-align:						center;
+		border:							.09em solid #999;
+}	#miniLI {
+		background: 					transparent url(../images/ethosLogo.png) no-repeat;
+		background-position:			50% -.2em; 
+		-webkit-transition: 			background-color 150ms linear;
+		-moz-transition: 				background-color 150ms linear;
+		-o-transition: 					background-color 150ms linear;
+		transition: 					background-color 150ms linear;
+}	#miniLI:hover {
+		background-color:				#3cb2e5; /*#1449a0;*/
+		background-position:			50% -5.85em;
+} 	.topLI:active, .topLI:hover, .topLI.current {
+		background-color:				#e1f9ff; /*#dfeff3; /*#eff7f9;*/
+		color:							#000; 
+		text-shadow:					1px 1px 10px #fff;
+}	.topLI:active {
+		-ms-box-shadow:     			none; 
+		-moz-box-shadow:    			none; 
+		-webkit-box-shadow: 			none;
+		box-shadow:		    			none;
+		border:							.1em solid #999;
+	}
+	
+.footer {
+		margin-top:						5%;
+		display:						inline-block;
+}
+	.footerBar {
+		position:						relative;
+		padding:						.15em .2em 0 .8em;
+		color:							#666;
+		font-size:						1.2em;
+		height:							38px;
+		border-bottom:					solid 1px #999; 
+	}	.footerBar h3 { 
+		float:							left;
+		position:						relative; 
+		left:							7%; 
+		margin-top:						0em;
+	}	
+	.footerContent {
+		padding:						.7em .0em 1.1em .95em;
+		background-size:				100%; 
+		width:							100%;
+	}
+	.footerContent h3 { 
+		color: 							#4d4d4d; 
+		margin: 						0 0 4px 0; 
+	}
+	.contactFormDiv {
+		float: 							right; 
+		height:							220px;
+	} 
+	.contactField {
+		margin-top:						.8em;
+		border-radius:					.6em;
+		border:							1px solid #bcb8d0; 
+	}	
+	#contactTextFieldName, #contactTextFieldEmail {
+		height:							30px;
+	}	#contactTextFieldEmail {
+		margin-left:					7%;
+	}	#contactUsButton {
+		margin-top:						4%;
+		width:							40%;
+	}	#contactMainField {
+		height:							100px;
+		width:							90%;
+	}	#inputField {
+		height:							25px;
+		border:							1px solid #bcb8d0; 
+	}	#textField {
+		width:							100%;
+		height:							50px;
+		border:							1px solid #bcb8d0;
+	}	input:focus, textarea:focus, select:focus, textarea:focus {
+		-webkit-box-shadow: 			inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+		-moz-box-shadow: 				inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+		box-shadow: 					inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+		outline:						none;
+	} 
+	.contactResult {
+		display: 						none; 
+		padding: 						30px 0 0 30px;
+	}
+	.footerTitle {
+		float:							left;
+		margin-left:					3em;
+	}
+	#sitemap {
+		height:							220px;
+	} #sitemap ul {
+		padding:						0.2em;
+		margin:							0;
+		list-style-type:				none;
+	}
+	.column {
+		float:							left;
+		margin-left:					1%;
+	} .column a {
+		color:							#888;
+		line-height:					2em;
+	} .column a:hover {
+		color: 							#333;
+	}	.centered {
+		margin-right:					auto;
+		margin-left:					auto;
+		text-align:						center;
+	}	#servicesH1 {
+		display:						inline-block;
+		float:							left;
+		width:							100%;
+	}
+	.socialLinks {
+		list-style-type:				none;
+		width:							45%;
+	}	.socialLinks li {
+			background:						transparent url(../images/icons/icon-set.png) 50% no-repeat;
+			background-color:				#666;
+			float:							right;
+			position:						relative;
+			right:							-100%;
+			margin:							-7% 2% 0 2%;
+			width:							32px;
+			height:							32px;
+	}	#linkedinIcon {
+			background-position:						2% 50%;
+	}	#facebookIcon {
+			background-position:						34% 50%;
+	}	#twitterIcon {
+			background-position:						68% 50%;
+	}	#googleIcon {
+			background-position:						99.4% 50%;
+	}	#linkedinIcon:hover {
+			background-color:						#3865b1;
+	}	#facebookIcon:hover {
+			background-color:						#6192d5;
+	}	#twitterIcon:hover {
+			background-color:						#4ca8e9;
+	}	#googleIcon:hover {
+			background-color:						#51c9db;
+	}
+	
+
+/*END SECTION-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Home Page  */
+
+.headerContain {
+	float:					left;
+	text-align:				center;
+	margin-right:			auto;
+	margin-left:			3%;
+} 
+
+.mainH1 {
+	margin-top:				0em;
+	font-size:				2.2em;
+	color:					#555;
+	text-shadow:			3px 3px 3px #999;
+}	.mainH1 span {
+	font-size:				2.1em;
+	color:					#444;
+}
+	#mainName {
+	font-size:				1.8em;
+	color:					#422d03;
+}
+
+.mainH3 {
+	color:					#14789d;
+	margin-top:				1%;
+} 
+
+.mainNav {
+	list-style-type:		none;
+}	.mainNavBox {
+	float:					left;
+	position:				relative;
+	color:					#422d03; 
+	background:				transparent url(../images/ethosIcons.jpg) 50% 2.6em no-repeat; 
+	background-color:		#c7edfc;/* #e2f7ff; #00b5f8;/*#def8ff; /*#eff7f9; /* #eaf7f9; #e4f5f8; */
+	text-align:				center;
+	margin:					6% 2.5% 0% 0%;
+	padding:				.5%;
+	height:					195px;
+	border:					1px solid #999;
+}	#mainIconDesign {
+	background-position:	50% -23.2em;
+}	#mainIconPerformance {
+	background-position:	50% -54.5em;
+}	#mainIconFind {
+	background-position:	50% -81.7em;
+}	#mainIconBuild:hover, #mainIconBuild:active {
+	background-position:	50% -9.9em;
+}	#mainIconDesign:hover, #mainIconDesign:active {
+	background-position:	50% -38.45em;
+}	#mainIconPerformance:hover, #mainIconPerformance:active {
+	background-position:	50% -67.75em;
+}	#mainIconFind:hover, #mainIconFind:active {
+	background-position:	50% -94.4em;
+}	.mainNavBox h3 {
+	font-size:				.99em;
+}
+
+.mainNav h2 {
+	display: block;
+	position: static; 
+	width: 280px; 
+	color: #68CFF2;
+}
+
+.mainNavBox:hover {
+	color:					#fff;
+	background-color: 		#007fe0;/*#2655cc;/*#003fe0;/*#007fe0;/*#0f62a2;*/
+
+}	
+
+.mainNavBox:active {
+	color:					#fff;
+	-ms-box-shadow:     	0 0 0; 
+	-moz-box-shadow:    	0 0 0; 
+	-webkit-box-shadow: 	0 0 0;
+	box-shadow:		    	0 0 0;	
+	background-color: 		#007fe0;
+}
+
+.textColumns {
+	float:					left;
+	position:				relative;
+	left:					-1%;
+}
+
+/***SLIDER***/
+
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{
+	position: absolute; 
+	background: transparent url(../images/slider/prev-next.png) no-repeat; 
+	width: 50px; 
+	height: 50px;
+}
+ul.bjqs-controls.v-centered li.bjqs-next a{
+	right: -6%;
+	opacity: .5;
+	background-position: 100.5% 50%;
+}	
+ul.bjqs-controls.v-centered li.bjqs-prev a{
+	left:  -6%;
+	opacity: .5;
+	background-position: -0.5% 50%;
+}	
+ul.bjqs-controls.v-centered li.bjqs-next a:hover, ul.bjqs-controls.v-centered li.bjqs-prev a:hover {
+	opacity: 1;
+}
+ol.bjqs-markers {
+	list-style: none; 
+	padding: 0; 
+	margin: 0 0 0 -9px; 
+	width:100%;
+}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a {
+	display:inline-block;
+	margin: .4em 0 0 1em;
+	width: 20px;
+	height: 20px;
+	background-color: #68cff2;
+	border: 1px solid #999;
+}
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover {
+	background-color: #164fa8;
+}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+#banner-fade {
+	max-width:  100% !important; /* this effectively overwrites the strange inline styling. I do wish I could find the source of it though. */
+	max-height: 320px;  
+}
+.sliderTextContainer {
+	float: right; 
+}	.sliderTextContainer span {
+	display: block;
+}	.sliderTextContainer h1 {
+	margin-left: -2.2%;
+}	.sliderTextContainer p {
+	line-height: 180%;
+}
+.sliderImageContainer { 
+	float: left;
+	height:	100%;
+	max-height: 320px;
+}	
+
+/*END SECTION HOME PAGE---------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+/* SECTION:: Info Pages */
+
+
+/*	ALL PAGES */
+
+.infoPage {
+	
+}	#leftPage {
+	margin-left:			13.8%;
+}	.biggerPage {
+	width:					70%;
+}
+
+.rightIcon {
+	float:					right;
+	position:				relative;
+}	#iconEthos {
+	right:					17%;
+	margin-top:				15%;
+}
+
+.leftIcon {
+	float:					left;
+	position:				relative;
+}	#iconSingleLeft {
+	left:					15%;
+	margin-top:				15%;
+}	
+
+.menuUL {
+	list-style-type:		none;
+}	.menuLI {
+	float:					left;
+	width:					48%;
+	margin:					3% 9% 4% -7%;
+	padding:				2%;
+	border-radius:			.8em;
+}	.menuLI h2 {
+	text-align:				center;
+} 	
+
+.border {
+	position:				relative;
+	height:					100%;
+	width:					1px;
+	display:				block;
+	top:					40px;
+}	#rightLine {
+	float:					right;
+	position:				relative;
+	left:					-16.2%;
+}	#leftLine {
+	float:					left;
+	position:				relative;
+	left:					-2.5%;
+}	#bottomLine {
+	width:					100%;
+	height:					1px;
+}
+
+.pageH1 {
+	padding:				2em 0 .5em; 
+	font-size:				2em;
+}	.pageH1 span, .pageH2 span, .pageP span {
+	color:					#115eac;
+}	#menuH1 {
+	text-align:				center;
+	position:				absolute;
+	top:					25%;
+}
+
+.pageP, .pageH3 {
+	width:					70%;
+	line-height:			130%;
+	margin-left:			5%;
+}	.pageP {
+	font-size:				1.1em;
+	line-height:			140%;
+} 
+
+.pageLI {
+	width:					70%;
+}
+
+.pageUL {
+	line-height:			180%;
+}	#noListUL {
+	list-style-type:		none;
+}
+
+.pageLI {
+	font-size:				1.1em;
+}	.pageLI span {
+	font-weight:			bold;
+}
+
+.menuA {
+	text-decoration: 		underline !important;
+}
+
+/****SITE BUILDING PAGE****/ 
+
+#siteBuildingPage h1 {
+	width:								30%; 
+	color:								#fff; 
+	margin:								-27% 0 0 4%; 
+	line-height:						150%;
+	font-shadow:						1px 1px 1px #000; 
+	position:							relative;
+	z-index:							11;
+	padding:							0%;
+}	#siteBuildingInscription {
+	display:							block; 
+	font-size:							.5em; 
+	margin:								33% 0 0 0;
+	width:								130%;
+	color:								#472300;
+	text-shadow:						2px 2px 2px #fff;
+}
+
+#siteBuildingMainPic {
+	margin-top:							2%;
+}
+
+#siteBuildingPage img {
+	max-width: 							100%;
+	position:							relative; 
+	z-index:							10;
+	margin-top:							.5%;
+}
+
+#siteBuildingPage section {
+	width:							32%;
+	float:							left;
+}	.ties {
+	height: 						300px; 
+	background: 					transparent url(../images/ties.jpg) no-repeat;
+	width:							100%;
+	float:							left;
+	position:						relative; 
+	margin:							-35% 0 0 6%;
+	z-index:						1;
+	border:							1px solid #dedede; 
+}		#Tie1 {
+	background-position: 			-12.5% 95%;
+}		#Tie2 {
+	background-position:			50.5% 70%;
+}		#Tie3 {
+	background-position:			113% 44%;
+}	.ties:active {
+	top:							10px;
+}	.ties h3 {
+	margin-top:						80%;
+	color:							#666;
+}		#Tie1 h3 {
+		margin-left:				38.5%;
+}		#Tie2 h3 {
+		margin-left:				40%;
+}		#Tie3 h3 {
+		margin-left:				39%;
+}	#siteBuildingBanner {
+		position:					absolute; 
+		top:						35%; 
+		left: 						23%; 
+		z-index:					15;
+}
+
+#siteBuildingTextContainer {
+	width:							100%;
+	height:							420px;
+	float:							left;
+	margin:							1% 0 -2.5% 0;
+	padding:						0% 5% 0% 5%;
+}	#siteBuildingTextContainer p, #siteBuildingTextContainer li {
+	width:							80%;
+}	#siteBuildingTextContainer h2 {
+	font-size:						2em;
+}	#siteBuildingTextContainer span {
+	font-size:						1.05em;
+	color:							#000;
+}
+
+/****LOW PRICES PAGE****/ 
+
+.pictureMenuPage {
+	width:				100%;
+	height:				800px;
+	margin:				4% 0 0 0;
+}
+
+#lowPricesPage {
+	height:					100%;
+	margin:					4% 0 0 0;
+} 	#lowPricesPage h1 {
+		font-size:			2em;
+		position:			absolute;
+		color:				#dae0cd;
+		top:				4%; 
+		left:				40%;
+		z-index:			50;
+}	#lowPricesPage h1 span {
+		font-size:			0.6em;
+		display:			inline-block;
+		margin:				14% 0% 14% 31%;
+}	
+
+#affordableMainImage {
+	max-width:				100%;
+	position:				relative;
+	z-index:				10;
+	margin-top:				.7%;
+}
+
+#lowPricesPage section {
+	width:				32%;
+	float:				left;
+	cursor:				pointer;
+}	.lamp {
+	height: 			150px; 
+	background: 		transparent url(../images/lamps.jpg) no-repeat;
+	width:				100%;
+	float:				left;
+	position:			relative; 
+	margin-top:			-1%;
+}	
+
+.lampText { /* inherits from #lowPricesPage section. CSS considers this section subordinate. */ 
+	position:			relative;
+	width:				100% !important;
+	cursor:				default !important;
+	height:				220px;
+	display:			inline-block;
+	margin:				1% 0 0 3%;
+}	.lampText h3 {
+	font-size:			2em; 
+	width:				65%;
+	text-align:			center;
+	margin:				1% 0 0 -9%; 
+}	.lampText p {
+	width:				60%; 
+	line-height:		1.5;
+	margin:				2%; 
+}		.lampText.lampLeft h3 {
+	color:				#666;
+}
+	.lampCenter {
+	margin:				1% 0 0 19%;
+}		.lampText.lampCenter h3 {	
+			color: 				#913818;
+			margin-left:		-2%;
+}	.lampRight {
+	margin:				1% 0 0 32%;
+	text-align:			right;
+}		.lampText.lampRight h3 {
+			color: 				#82b5ac;
+			margin-left:		2%;
+}
+
+.affordableNotice {
+	position:					absolute;
+	color: 						#e0e0e0;
+	z-index:					10;
+}	#secondAffordableNotice {
+	left:						55%;
+}
+
+#affordableBottomList {
+	float:					left;
+	width:					100%;
+	height:					250px; 
+	display:				inline-block;
+	margin:					2.5% 0 -1% 0;
+	text-align:				center; 
+	font-weight:			bold;
+}		#affordableBottomList ul {
+	list-style-type:		none; 
+}		#affordableBottomList li {
+	width:					20%; 
+	border:					1px solid #999;
+	float:					left;
+	height:					150px; 
+	margin:					0% 0 0 3.2%;
+	background:				transparent url(../images/ethos-web-solutions-plain-icons.png) 50% no-repeat;
+}			#affordableBuildIcon {
+	background-position:	-4% -200% !important;
+}			#affordableDesignIcon {
+	background-position:	31% -150% !important;
+}			#affordablePerformanceIcon {
+	background-position:	67% -150% !important;
+}			#affordableFindIcon {
+	background-position:	102% -350% !important;		
+}		#affordableBottomList li:hover {
+	background-color:		#e1f9ff;
+}	
+
+/*******Quality Page********/
+
+#qualityPage section {
+	float:	left;
+}	#qualityPage section p {
+	font-size: 		1.1em;
+	position:		relative;
+	z-index:		10;
+}	#qualityRightText {
+	display:		inline-block;
+	text-align: 	right;
+}	
+
+#qualityPage h1 {
+	float: left;
+	width: 100%;
+	position: relative; 
+	z-index: 10; 
+} 	#qualityPage h3 {
+	position: relative; 
+	z-index: 10; 
+	color: #1897C7;
+}
+
+.clockWrapper {
+        position: absolute;
+      	width: 335px;
+      	height: 425px; 
+}	#clock, #seconds, #minutes, #hours {
+		position: absolute;
+		display: inline-block;		
+}	
+
+/*END SECTION Info Pages--------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------*/
+/* SECTION:: Buttons & Utility  */
+
+.button, #edit-submit, .item-list.first {
+	background:							#1897c7;
+	text-align:							center;
+	line-height:						1em;
+	white-space:						nowrap;
+	text-decoration:					none !important;
+	color:								#ffffff !important;
+	cursor: 							pointer;
+	text-shadow:						0 1px 1px rgba(0, 0, 0, .5);
+	-webkit-border-radius:				.8em; 
+	-moz-border-radius:					.8em; 
+	border-radius:						.8em; 
+}
+
+.button:hover, .button.infoBox:hover {
+	background: 						#00b5f8;
+}
+	
+.button.medium {
+	font-size:							1.2em;
+	padding:							1.4%;
+	width:								25%;
+	min-width:							100px;
+}	#submitButton {
+	margin-top:							1%;
+}
+
+
+/*END SECTION-------------------------------------------------------------------*/
+
+
+
+
+
+/*BEGIN SECTION : AD LANDING PAGES----------------------------------------------*/
+
+/***25% Off Promo***/
+.topLandingContainer {
+	float: 								left; 
+	margin-top:							4.5%;
+	height:								150px;
+}
+#TwentyFiveOff {
+	float:								right;
+	position:							relative;
+	left:								-10%;
+	font-size:							3.7em;
+	margin:								0 0 -5% 20%; 
+	text-shadow:						1px 1px #888;
+	width:								100%;
+	display:							block;
+}
+.randoCodeContainer {
+	float:								right; 
+	width:								50%;
+	margin-top:							4.5%;
+	height:								330px;
+	border-left:						1px solid #dfdfdf;
+}
+#randoCodeElement {
+	margin:								10.5% 0 0 6.5%;
+}
+.randoCode {
+	font-size:							2.2em;
+	color:								#1897c7;
+}
+.landingDisclaimerContainer {
+	float:								left;
+	width:								50%;
+	height:								180px; 
+}	.landingDisclaimerContainer p {
+	font-size:							1.2em;
+	line-height:						150%;
+	width:								80%;
+	position:							relative;
+}	.landingDisclaimerContainer p:first-child {
+	margin-top:							-5%;
+}	.landingDisclaimerContainer p span {
+	font-weight:						bold;
+} 	.landingDisclaimerContainer h3 {
+	position:							absolute; 
+	left:								46.8%;
+	color:								#1897c7;
+}	
+
+/***20% Off For DU Alums***/
+
+#DUPage h1 {
+	font-size:				2.8em;
+	margin-top:				0%;
+}	#DUPage span {
+	color:					#115eac;
+}	
+
+#DULeftPanel { 
+	float:					left;
+	width:					20%;
+	margin-top:				2%;
+	border-right:			1px solid #e6e8e8;
+}
+
+#DURightPanel {
+	float:					left;
+	width:					80%;
+}	#DURightPanel h1 {
+	margin:					7% 0 7% 0; 
+}	.DUBoxes h2 {
+	font-size:				1.2em;
+	margin-left:			2%;
+	width:					100%;
+}	.DUBoxes p {
+	line-height:			160%;
+	font-size:				1.2em;
+	width:					65%;
+	margin:					0 0 0 4%; 
+}	#DUButton {
+	padding:				4%; 
+	width:					45%; 
+	display:				block;
+	font-size:				2em;
+	margin:					4% 6% 2% 2%;
+}	#DUContactText {
+	margin:					2% 6% 0 4%;
+	display:				block;
+	font-size:				1.4em;
+}	#DUSeperator {
+	margin:					4% 0 0 23%;
+}
+
+#DUBottomPanel {
+	padding-top:			1%; 
+	float:					left;
+	position:				relative;
+	width:					100%;
+	left:					-8%;
+}	#DUServicesText {
+	text-align:				center;
+	margin:					-4% 5.7% 0 0;
+}
