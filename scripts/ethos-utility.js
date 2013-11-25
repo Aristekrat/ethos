@@ -217,4 +217,59 @@ $("#qualityPage aside").fadeIn().append(clock);
 
 // END Websites for Law Firms / Tie & Dressing Room Page
 
-}); 
+/*** Email Form Functionality ***/
+
+// This functionality mostly worked. However, the disable button functionality is not working for some reason. Maybe switch to attr. 
+// I also need to build something that will tell the user that everything is working, and that they should wait. 
+
+$(".contactFormDiv form").submit(function(event) {
+	event.preventDefault();
+	$("#submitButton").prop("disabled"); 
+	$.ajax({
+		url: "../includes/mail-functionality.php",
+		type: "post",
+		data: $(".contactFormDiv form").serialize()
+		/*	yourName: $(".contactFormDiv input[name='yourName']").val(),  // At the moment mail-functionality.php is still not able to see these values. However, jQuery is properly grabbing them in this form.
+			yourEmail: $(".contactFormDiv input[name='yourEmail']").val(), // But they are still making it over to mail-functionality.php. A hard coded string in the value position does work. 
+			yourMessage: $(".contactFormDiv input[name='yourMessage']").val() */
+	}).done(function(jqxhr){
+		console.log(jqxhr);
+		$("#submitButton").prop("disabled", false).html("Submit");
+		$(".contactFormDiv").html("<h3>Thank You For Your Message</h3><br/><p>We will get back to you soon.</p>");
+	}).fail(function(){
+		$("#submitButton").prop("disabled", false).html("Submit");
+		$(".contactFormDiv").html("<h3>Error</h3><br/><p>Our Apologies, something went wrong. We'll fix that ASAP.</p>")
+	});
+})
+
+/*		Use this as inspiration for client side checking: 
+
+						isValidEmail:function(element,message){
+				//TODO: Replace this with something else.  Anything else.  Please.
+				var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  				if(!regex.test($(element).val())) {
+  					$(element).focus();
+  					Ethos.FormUtilities.showFormError(message);
+  					return false;
+  				}
+				return true;
+			},
+
+			showFormError:function(message) {
+				if(message && message != 'suppress')
+				alert(message);
+			}
+		},
+
+		  	submitContact:function(theForm) {
+				if(!Ethos.FormUtilities.isValidEmail($(theForm).children('input[name=email]'), 'Please enter a valid email address.')) { 
+					return false;
+				}
+				if(!Ethos.FormUtilities.hasValue($(theForm).children('textarea[name=message]'), 'Please enter a message.')) { 
+					return;
+				}
+
+
+*/ 
+
+})

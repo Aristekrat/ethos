@@ -1,8 +1,5 @@
 ErrorDocument 404 /ethos/missing.html
 
-
-
-
 Options +FollowSymLinks
 
 Options -Multiviews
